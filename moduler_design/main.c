@@ -17,6 +17,7 @@ int main() {
         printf("press 3 for multiply \n");
         printf("press 4 for division \n");
         printf("press 5 for static example\n");
+        printf("press 6 for extern example\n");
         scanf("%d", &choice);
         
         switch(choice) {
@@ -37,6 +38,9 @@ int main() {
                 for(int i=0; i<5; i++) {
                     static_example();
                 }
+                break;
+            case 6:
+                printf("Area of circle = %lf\n", area_of_circle(num1 * 1.0));
                 break;
             default:
                 printf("pressed choice %d to exit program\n", choice);
